@@ -1,0 +1,11 @@
+register- POST
+http://localhost:8080/api/v1/register
+
+{
+  "name":"admin",
+"email":"admin@gmail.com", 
+"password":"admin",
+"profile_pic":"pic"
+  
+}
+------------------------
