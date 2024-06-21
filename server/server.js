@@ -13,7 +13,7 @@ app.use(
     origin: process.env.FRONTEND_URL,
   })
 );
-
+///
 app.get("/", (req, res) => {
   res.status(200).json({
     message: "server is activated at / page",
