@@ -1,5 +1,6 @@
 import UserModel from "./../models/userModel.js";
 import { errorHandler } from "./../utils/error.js";
+
 export const checkEmail = async (req, res, next) => {
   const { email } = req.body;
   const checkEmail = await UserModel.findOne({ email }).select("-password");
